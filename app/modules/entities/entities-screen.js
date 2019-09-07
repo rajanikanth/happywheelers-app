@@ -5,6 +5,13 @@ import { connect } from 'react-redux'
 /*eslint-disable */
 import RoundedButton from '../../shared/components/rounded-button/rounded-button'
 import {
+  driverEntityScreen,
+  deviceDetailEntityScreen,
+  locationEntityScreen,
+  vehicleEntityScreen,
+  insuranceEntityScreen,
+  serviceEntityScreen,
+  businessEntityScreen,
   // ignite-jhipster-entity-screen-import-needle
 } from '../../navigation/layouts'
 /* eslint-enable */
@@ -16,6 +23,13 @@ class EntitiesScreen extends React.Component {
     return (
       <ScrollView style={styles.container}>
         <Text style={{ textAlign: 'center' }}>JHipster Entities will appear below</Text>
+        <RoundedButton text='Driver' onPress={driverEntityScreen} testID='driverEntityScreenButton' />
+        <RoundedButton text='DeviceDetail' onPress={deviceDetailEntityScreen} testID='deviceDetailEntityScreenButton' />
+        <RoundedButton text='Location' onPress={locationEntityScreen} testID='locationEntityScreenButton' />
+        <RoundedButton text='Vehicle' onPress={vehicleEntityScreen} testID='vehicleEntityScreenButton' />
+        <RoundedButton text='Insurance' onPress={insuranceEntityScreen} testID='insuranceEntityScreenButton' />
+        <RoundedButton text='Service' onPress={serviceEntityScreen} testID='serviceEntityScreenButton' />
+        <RoundedButton text='Business' onPress={businessEntityScreen} testID='businessEntityScreenButton' />
         {/* ignite-jhipster-entity-screen-needle */}
       </ScrollView>
     )

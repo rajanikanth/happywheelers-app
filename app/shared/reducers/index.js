@@ -10,6 +10,13 @@ export const reducers = combineReducers({
   appState: require('./app-state.reducer').reducer,
   users: require('./user.reducer').reducer,
   chat: require('../../modules/chat/chat.reducer').reducer,
+  drivers: require('../../modules/entities/driver/driver.reducer').reducer,
+  deviceDetails: require('../../modules/entities/device-details/device-details.reducer').reducer,
+  locations: require('../../modules/entities/location/location.reducer').reducer,
+  vehicles: require('../../modules/entities/vehicle/vehicle.reducer').reducer,
+  insurances: require('../../modules/entities/insurance/insurance.reducer').reducer,
+  services: require('../../modules/entities/services/services.reducer').reducer,
+  businesses: require('../../modules/entities/business/business.reducer').reducer,
   // ignite-jhipster-redux-store-import-needle
   account: require('./account.reducer').reducer,
   login: require('../../modules/login/login.reducer').reducer,

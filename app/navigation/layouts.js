@@ -18,6 +18,27 @@ import ChangePasswordScreen from '../modules/account/password/change-password-sc
 import EntitiesScreen from '../modules/entities/entities-screen'
 import StorybookScreen from '../../storybook'
 import ChatScreen from '../modules/chat/chat-screen'
+import DriverEntityScreen from '../modules/entities/driver/driver-entity-screen'
+import DriverEntityDetailScreen from '../modules/entities/driver/driver-entity-detail-screen'
+import DriverEntityEditScreen from '../modules/entities/driver/driver-entity-edit-screen'
+import DeviceDetailEntityScreen from '../modules/entities/device-details/device-details-entity-screen'
+import DeviceDetailEntityDetailScreen from '../modules/entities/device-details/device-details-entity-detail-screen'
+import DeviceDetailEntityEditScreen from '../modules/entities/device-details/device-details-entity-edit-screen'
+import LocationEntityScreen from '../modules/entities/location/location-entity-screen'
+import LocationEntityDetailScreen from '../modules/entities/location/location-entity-detail-screen'
+import LocationEntityEditScreen from '../modules/entities/location/location-entity-edit-screen'
+import VehicleEntityScreen from '../modules/entities/vehicle/vehicle-entity-screen'
+import VehicleEntityDetailScreen from '../modules/entities/vehicle/vehicle-entity-detail-screen'
+import VehicleEntityEditScreen from '../modules/entities/vehicle/vehicle-entity-edit-screen'
+import InsuranceEntityScreen from '../modules/entities/insurance/insurance-entity-screen'
+import InsuranceEntityDetailScreen from '../modules/entities/insurance/insurance-entity-detail-screen'
+import InsuranceEntityEditScreen from '../modules/entities/insurance/insurance-entity-edit-screen'
+import ServiceEntityScreen from '../modules/entities/services/services-entity-screen'
+import ServiceEntityDetailScreen from '../modules/entities/services/services-entity-detail-screen'
+import ServiceEntityEditScreen from '../modules/entities/services/services-entity-edit-screen'
+import BusinessEntityScreen from '../modules/entities/business/business-entity-screen'
+import BusinessEntityDetailScreen from '../modules/entities/business/business-entity-detail-screen'
+import BusinessEntityEditScreen from '../modules/entities/business/business-entity-edit-screen'
 // ignite-jhipster-navigation-import-needle
 
 export const LOGIN_SCREEN = 'nav.LoginScreen'
@@ -30,6 +51,27 @@ export const DRAWER_CONTENT = 'nav.DrawerContent'
 export const ENTITIES_SCREEN = 'nav.EntitiesScreen'
 export const STORYBOOK_SCREEN = 'nav.StorybookScreen'
 export const CHAT_SCREEN = 'nav.ChatScreen'
+export const DRIVER_ENTITY_SCREEN = 'nav.DriverEntityScreen'
+export const DRIVER_ENTITY_DETAIL_SCREEN = 'nav.DriverEntityDetailScreen'
+export const DRIVER_ENTITY_EDIT_SCREEN = 'nav.DriverEntityEditScreen'
+export const DEVICE_DETAIL_ENTITY_SCREEN = 'nav.DeviceDetailEntityScreen'
+export const DEVICE_DETAIL_ENTITY_DETAIL_SCREEN = 'nav.DeviceDetailEntityDetailScreen'
+export const DEVICE_DETAIL_ENTITY_EDIT_SCREEN = 'nav.DeviceDetailEntityEditScreen'
+export const LOCATION_ENTITY_SCREEN = 'nav.LocationEntityScreen'
+export const LOCATION_ENTITY_DETAIL_SCREEN = 'nav.LocationEntityDetailScreen'
+export const LOCATION_ENTITY_EDIT_SCREEN = 'nav.LocationEntityEditScreen'
+export const VEHICLE_ENTITY_SCREEN = 'nav.VehicleEntityScreen'
+export const VEHICLE_ENTITY_DETAIL_SCREEN = 'nav.VehicleEntityDetailScreen'
+export const VEHICLE_ENTITY_EDIT_SCREEN = 'nav.VehicleEntityEditScreen'
+export const INSURANCE_ENTITY_SCREEN = 'nav.InsuranceEntityScreen'
+export const INSURANCE_ENTITY_DETAIL_SCREEN = 'nav.InsuranceEntityDetailScreen'
+export const INSURANCE_ENTITY_EDIT_SCREEN = 'nav.InsuranceEntityEditScreen'
+export const SERVICE_ENTITY_SCREEN = 'nav.ServiceEntityScreen'
+export const SERVICE_ENTITY_DETAIL_SCREEN = 'nav.ServiceEntityDetailScreen'
+export const SERVICE_ENTITY_EDIT_SCREEN = 'nav.ServiceEntityEditScreen'
+export const BUSINESS_ENTITY_SCREEN = 'nav.BusinessEntityScreen'
+export const BUSINESS_ENTITY_DETAIL_SCREEN = 'nav.BusinessEntityDetailScreen'
+export const BUSINESS_ENTITY_EDIT_SCREEN = 'nav.BusinessEntityEditScreen'
 // ignite-jhipster-navigation-declaration-needle
 
 const store = createStore()
@@ -116,6 +158,27 @@ export function registerScreensAndStartApp () {
   Navigation.registerComponentWithRedux(ENTITIES_SCREEN, () => EntitiesScreen, Provider, store)
   Navigation.registerComponent(STORYBOOK_SCREEN, () => StorybookScreen)
   Navigation.registerComponentWithRedux(CHAT_SCREEN, () => ChatScreen, Provider, store)
+  Navigation.registerComponentWithRedux(DRIVER_ENTITY_SCREEN, () => DriverEntityScreen, Provider, store)
+  Navigation.registerComponentWithRedux(DRIVER_ENTITY_DETAIL_SCREEN, () => DriverEntityDetailScreen, Provider, store)
+  Navigation.registerComponentWithRedux(DRIVER_ENTITY_EDIT_SCREEN, () => DriverEntityEditScreen, Provider, store)
+  Navigation.registerComponentWithRedux(DEVICE_DETAIL_ENTITY_SCREEN, () => DeviceDetailEntityScreen, Provider, store)
+  Navigation.registerComponentWithRedux(DEVICE_DETAIL_ENTITY_DETAIL_SCREEN, () => DeviceDetailEntityDetailScreen, Provider, store)
+  Navigation.registerComponentWithRedux(DEVICE_DETAIL_ENTITY_EDIT_SCREEN, () => DeviceDetailEntityEditScreen, Provider, store)
+  Navigation.registerComponentWithRedux(LOCATION_ENTITY_SCREEN, () => LocationEntityScreen, Provider, store)
+  Navigation.registerComponentWithRedux(LOCATION_ENTITY_DETAIL_SCREEN, () => LocationEntityDetailScreen, Provider, store)
+  Navigation.registerComponentWithRedux(LOCATION_ENTITY_EDIT_SCREEN, () => LocationEntityEditScreen, Provider, store)
+  Navigation.registerComponentWithRedux(VEHICLE_ENTITY_SCREEN, () => VehicleEntityScreen, Provider, store)
+  Navigation.registerComponentWithRedux(VEHICLE_ENTITY_DETAIL_SCREEN, () => VehicleEntityDetailScreen, Provider, store)
+  Navigation.registerComponentWithRedux(VEHICLE_ENTITY_EDIT_SCREEN, () => VehicleEntityEditScreen, Provider, store)
+  Navigation.registerComponentWithRedux(INSURANCE_ENTITY_SCREEN, () => InsuranceEntityScreen, Provider, store)
+  Navigation.registerComponentWithRedux(INSURANCE_ENTITY_DETAIL_SCREEN, () => InsuranceEntityDetailScreen, Provider, store)
+  Navigation.registerComponentWithRedux(INSURANCE_ENTITY_EDIT_SCREEN, () => InsuranceEntityEditScreen, Provider, store)
+  Navigation.registerComponentWithRedux(SERVICE_ENTITY_SCREEN, () => ServiceEntityScreen, Provider, store)
+  Navigation.registerComponentWithRedux(SERVICE_ENTITY_DETAIL_SCREEN, () => ServiceEntityDetailScreen, Provider, store)
+  Navigation.registerComponentWithRedux(SERVICE_ENTITY_EDIT_SCREEN, () => ServiceEntityEditScreen, Provider, store)
+  Navigation.registerComponentWithRedux(BUSINESS_ENTITY_SCREEN, () => BusinessEntityScreen, Provider, store)
+  Navigation.registerComponentWithRedux(BUSINESS_ENTITY_DETAIL_SCREEN, () => BusinessEntityDetailScreen, Provider, store)
+  Navigation.registerComponentWithRedux(BUSINESS_ENTITY_EDIT_SCREEN, () => BusinessEntityEditScreen, Provider, store)
   // ignite-jhipster-navigation-registration-needle
 
   Navigation.events().registerAppLaunchedListener(() => {
@@ -257,6 +320,391 @@ export const chatScreen = () => Navigation.push('center', {
       topBar: {
         title: {
           text: 'Chat',
+          color: Colors.snow
+        }
+      }
+    }
+  }
+})
+
+export const driverEntityScreen = () => Navigation.push('center', {
+  component: {
+    name: DRIVER_ENTITY_SCREEN,
+    options: {
+      topBar: {
+        title: {
+          text: 'Drivers',
+          color: Colors.snow
+        },
+        rightButtons: [
+          {
+            id: 'createButton',
+            text: 'Create',
+            color: Colors.snow
+          }
+        ]
+      }
+    }
+  }
+})
+
+export const driverEntityEditScreen = (data) => Navigation.push('center', {
+  component: {
+    name: DRIVER_ENTITY_EDIT_SCREEN,
+    passProps: {
+      data
+    },
+    options: {
+      topBar: {
+        title: {
+          text: 'Drivers',
+          color: Colors.snow
+        }
+      }
+    }
+  }
+})
+
+export const driverEntityDetailScreen = (data) => Navigation.push('center', {
+  component: {
+    name: DRIVER_ENTITY_DETAIL_SCREEN,
+    passProps: {
+      data
+    },
+    options: {
+      topBar: {
+        title: {
+          text: 'Drivers',
+          color: Colors.snow
+        }
+      }
+    }
+  }
+})
+
+export const deviceDetailEntityScreen = () => Navigation.push('center', {
+  component: {
+    name: DEVICE_DETAIL_ENTITY_SCREEN,
+    options: {
+      topBar: {
+        title: {
+          text: 'DeviceDetails',
+          color: Colors.snow
+        },
+        rightButtons: [
+          {
+            id: 'createButton',
+            text: 'Create',
+            color: Colors.snow
+          }
+        ]
+      }
+    }
+  }
+})
+
+export const deviceDetailEntityEditScreen = (data) => Navigation.push('center', {
+  component: {
+    name: DEVICE_DETAIL_ENTITY_EDIT_SCREEN,
+    passProps: {
+      data
+    },
+    options: {
+      topBar: {
+        title: {
+          text: 'DeviceDetails',
+          color: Colors.snow
+        }
+      }
+    }
+  }
+})
+
+export const deviceDetailEntityDetailScreen = (data) => Navigation.push('center', {
+  component: {
+    name: DEVICE_DETAIL_ENTITY_DETAIL_SCREEN,
+    passProps: {
+      data
+    },
+    options: {
+      topBar: {
+        title: {
+          text: 'DeviceDetails',
+          color: Colors.snow
+        }
+      }
+    }
+  }
+})
+
+export const locationEntityScreen = () => Navigation.push('center', {
+  component: {
+    name: LOCATION_ENTITY_SCREEN,
+    options: {
+      topBar: {
+        title: {
+          text: 'Locations',
+          color: Colors.snow
+        },
+        rightButtons: [
+          {
+            id: 'createButton',
+            text: 'Create',
+            color: Colors.snow
+          }
+        ]
+      }
+    }
+  }
+})
+
+export const locationEntityEditScreen = (data) => Navigation.push('center', {
+  component: {
+    name: LOCATION_ENTITY_EDIT_SCREEN,
+    passProps: {
+      data
+    },
+    options: {
+      topBar: {
+        title: {
+          text: 'Locations',
+          color: Colors.snow
+        }
+      }
+    }
+  }
+})
+
+export const locationEntityDetailScreen = (data) => Navigation.push('center', {
+  component: {
+    name: LOCATION_ENTITY_DETAIL_SCREEN,
+    passProps: {
+      data
+    },
+    options: {
+      topBar: {
+        title: {
+          text: 'Locations',
+          color: Colors.snow
+        }
+      }
+    }
+  }
+})
+
+export const vehicleEntityScreen = () => Navigation.push('center', {
+  component: {
+    name: VEHICLE_ENTITY_SCREEN,
+    options: {
+      topBar: {
+        title: {
+          text: 'Vehicles',
+          color: Colors.snow
+        },
+        rightButtons: [
+          {
+            id: 'createButton',
+            text: 'Create',
+            color: Colors.snow
+          }
+        ]
+      }
+    }
+  }
+})
+
+export const vehicleEntityEditScreen = (data) => Navigation.push('center', {
+  component: {
+    name: VEHICLE_ENTITY_EDIT_SCREEN,
+    passProps: {
+      data
+    },
+    options: {
+      topBar: {
+        title: {
+          text: 'Vehicles',
+          color: Colors.snow
+        }
+      }
+    }
+  }
+})
+
+export const vehicleEntityDetailScreen = (data) => Navigation.push('center', {
+  component: {
+    name: VEHICLE_ENTITY_DETAIL_SCREEN,
+    passProps: {
+      data
+    },
+    options: {
+      topBar: {
+        title: {
+          text: 'Vehicles',
+          color: Colors.snow
+        }
+      }
+    }
+  }
+})
+
+export const insuranceEntityScreen = () => Navigation.push('center', {
+  component: {
+    name: INSURANCE_ENTITY_SCREEN,
+    options: {
+      topBar: {
+        title: {
+          text: 'Insurances',
+          color: Colors.snow
+        },
+        rightButtons: [
+          {
+            id: 'createButton',
+            text: 'Create',
+            color: Colors.snow
+          }
+        ]
+      }
+    }
+  }
+})
+
+export const insuranceEntityEditScreen = (data) => Navigation.push('center', {
+  component: {
+    name: INSURANCE_ENTITY_EDIT_SCREEN,
+    passProps: {
+      data
+    },
+    options: {
+      topBar: {
+        title: {
+          text: 'Insurances',
+          color: Colors.snow
+        }
+      }
+    }
+  }
+})
+
+export const insuranceEntityDetailScreen = (data) => Navigation.push('center', {
+  component: {
+    name: INSURANCE_ENTITY_DETAIL_SCREEN,
+    passProps: {
+      data
+    },
+    options: {
+      topBar: {
+        title: {
+          text: 'Insurances',
+          color: Colors.snow
+        }
+      }
+    }
+  }
+})
+
+export const serviceEntityScreen = () => Navigation.push('center', {
+  component: {
+    name: SERVICE_ENTITY_SCREEN,
+    options: {
+      topBar: {
+        title: {
+          text: 'Services',
+          color: Colors.snow
+        },
+        rightButtons: [
+          {
+            id: 'createButton',
+            text: 'Create',
+            color: Colors.snow
+          }
+        ]
+      }
+    }
+  }
+})
+
+export const serviceEntityEditScreen = (data) => Navigation.push('center', {
+  component: {
+    name: SERVICE_ENTITY_EDIT_SCREEN,
+    passProps: {
+      data
+    },
+    options: {
+      topBar: {
+        title: {
+          text: 'Services',
+          color: Colors.snow
+        }
+      }
+    }
+  }
+})
+
+export const serviceEntityDetailScreen = (data) => Navigation.push('center', {
+  component: {
+    name: SERVICE_ENTITY_DETAIL_SCREEN,
+    passProps: {
+      data
+    },
+    options: {
+      topBar: {
+        title: {
+          text: 'Services',
+          color: Colors.snow
+        }
+      }
+    }
+  }
+})
+
+export const businessEntityScreen = () => Navigation.push('center', {
+  component: {
+    name: BUSINESS_ENTITY_SCREEN,
+    options: {
+      topBar: {
+        title: {
+          text: 'Businesses',
+          color: Colors.snow
+        },
+        rightButtons: [
+          {
+            id: 'createButton',
+            text: 'Create',
+            color: Colors.snow
+          }
+        ]
+      }
+    }
+  }
+})
+
+export const businessEntityEditScreen = (data) => Navigation.push('center', {
+  component: {
+    name: BUSINESS_ENTITY_EDIT_SCREEN,
+    passProps: {
+      data
+    },
+    options: {
+      topBar: {
+        title: {
+          text: 'Businesses',
+          color: Colors.snow
+        }
+      }
+    }
+  }
+})
+
+export const businessEntityDetailScreen = (data) => Navigation.push('center', {
+  component: {
+    name: BUSINESS_ENTITY_DETAIL_SCREEN,
+    passProps: {
+      data
+    },
+    options: {
+      topBar: {
+        title: {
+          text: 'Businesses',
           color: Colors.snow
         }
       }

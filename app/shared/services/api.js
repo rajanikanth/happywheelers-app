@@ -51,6 +51,55 @@ const create = (baseURL = AppConfig.apiUrl) => {
   const createUser = (user) => api.post('api/users', user)
   const updateUser = (user) => api.put('api/users', user)
   const deleteUser = (userId) => api.delete('api/users/' + userId)
+
+  const getDriver = (driverId) => api.get('api/drivers/' + driverId)
+  const getDrivers = (options) => api.get('api/drivers', options)
+  const createDriver = (driver) => api.post('api/drivers', driver)
+  const updateDriver = (driver) => api.put('api/drivers', driver)
+  const deleteDriver = (driverId) => api.delete('api/drivers/' + driverId)
+  const searchDrivers = (query) => api.get('api/_search/drivers', { query: query })
+
+  const getDeviceDetail = (deviceDetailId) => api.get('api/device-details/' + deviceDetailId)
+  const getDeviceDetails = (options) => api.get('api/device-details', options)
+  const createDeviceDetail = (deviceDetail) => api.post('api/device-details', deviceDetail)
+  const updateDeviceDetail = (deviceDetail) => api.put('api/device-details', deviceDetail)
+  const deleteDeviceDetail = (deviceDetailId) => api.delete('api/device-details/' + deviceDetailId)
+  const searchDeviceDetails = (query) => api.get('api/_search/device-details', { query: query })
+
+  const getLocation = (locationId) => api.get('api/locations/' + locationId)
+  const getLocations = (options) => api.get('api/locations', options)
+  const createLocation = (location) => api.post('api/locations', location)
+  const updateLocation = (location) => api.put('api/locations', location)
+  const deleteLocation = (locationId) => api.delete('api/locations/' + locationId)
+  const searchLocations = (query) => api.get('api/_search/locations', { query: query })
+
+  const getVehicle = (vehicleId) => api.get('api/vehicles/' + vehicleId)
+  const getVehicles = (options) => api.get('api/vehicles', options)
+  const createVehicle = (vehicle) => api.post('api/vehicles', vehicle)
+  const updateVehicle = (vehicle) => api.put('api/vehicles', vehicle)
+  const deleteVehicle = (vehicleId) => api.delete('api/vehicles/' + vehicleId)
+  const searchVehicles = (query) => api.get('api/_search/vehicles', { query: query })
+
+  const getInsurance = (insuranceId) => api.get('api/insurances/' + insuranceId)
+  const getInsurances = (options) => api.get('api/insurances', options)
+  const createInsurance = (insurance) => api.post('api/insurances', insurance)
+  const updateInsurance = (insurance) => api.put('api/insurances', insurance)
+  const deleteInsurance = (insuranceId) => api.delete('api/insurances/' + insuranceId)
+  const searchInsurances = (query) => api.get('api/_search/insurances', { query: query })
+
+  const getService = (serviceId) => api.get('api/services/' + serviceId)
+  const getServices = (options) => api.get('api/services', options)
+  const createService = (service) => api.post('api/services', service)
+  const updateService = (service) => api.put('api/services', service)
+  const deleteService = (serviceId) => api.delete('api/services/' + serviceId)
+  const searchServices = (query) => api.get('api/_search/services', { query: query })
+
+  const getBusiness = (businessId) => api.get('api/businesses/' + businessId)
+  const getBusinesses = (options) => api.get('api/businesses', options)
+  const createBusiness = (business) => api.post('api/businesses', business)
+  const updateBusiness = (business) => api.put('api/businesses', business)
+  const deleteBusiness = (businessId) => api.delete('api/businesses/' + businessId)
+  const searchBusinesses = (query) => api.get('api/_search/businesses', { query: query })
   // ignite-jhipster-api-method-needle
 
   // ------
@@ -72,6 +121,55 @@ const create = (baseURL = AppConfig.apiUrl) => {
     getUsers,
     getUser,
     deleteUser,
+
+    createDriver,
+    updateDriver,
+    getDrivers,
+    getDriver,
+    deleteDriver,
+    searchDrivers,
+
+    createDeviceDetail,
+    updateDeviceDetail,
+    getDeviceDetails,
+    getDeviceDetail,
+    deleteDeviceDetail,
+    searchDeviceDetails,
+
+    createLocation,
+    updateLocation,
+    getLocations,
+    getLocation,
+    deleteLocation,
+    searchLocations,
+
+    createVehicle,
+    updateVehicle,
+    getVehicles,
+    getVehicle,
+    deleteVehicle,
+    searchVehicles,
+
+    createInsurance,
+    updateInsurance,
+    getInsurances,
+    getInsurance,
+    deleteInsurance,
+    searchInsurances,
+
+    createService,
+    updateService,
+    getServices,
+    getService,
+    deleteService,
+    searchServices,
+
+    createBusiness,
+    updateBusiness,
+    getBusinesses,
+    getBusiness,
+    deleteBusiness,
+    searchBusinesses,
     // ignite-jhipster-api-export-needle
     setAuthToken,
     removeAuthToken,
