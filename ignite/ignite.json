@@ -1,0 +1,17 @@
+{
+  "name": "happywheelersapp",
+  "createdWith": "3.1.6",
+  "boilerplate": "ignite-jhipster",
+  "jhipsterDirectory": "..//Users/raj/jhipster-home/happywheelers-api",
+  "authType": "jwt",
+  "searchEngine": true,
+  "websockets": true,
+  "detox": true,
+  "askToOverwrite": false,
+  "generators": {
+    "entity": "ignite-jhipster",
+    "import-jdl": "ignite-jhipster",
+    "upgrade": "ignite-jhipster"
+  },
+  "boilerplateVersion": "3.2.0"
+}
